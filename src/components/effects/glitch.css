@@ -1,0 +1,42 @@
+body {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: Helvetica;
+    overflow: hidden;
+}
+
+.bottom {
+
+    font-size: 100px;
+    -webkit-clip-path: inset(58% 0 0 0);
+    clip-path: inset(58% 0 0 0);
+}
+
+.top {
+    -webkit-clip-path: inset(0 0 41% 0);
+    clip-path: inset(0 0 41%);
+}
+
+
+.redShadow {
+    text-shadow: -3px 0 red;
+}
+
+.greenShadow {
+    text-shadow: -3px 0 red;
+}
+
+.glitch {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.textCont {
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}

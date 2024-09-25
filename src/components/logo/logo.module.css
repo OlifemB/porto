@@ -1,0 +1,33 @@
+.bottom {
+    font-size: 100px;
+    clip-path: inset(58% 0 0 0);
+}
+
+.top {
+    clip-path: inset(0 0 41%);
+}
+
+.redShadow {
+    filter: dropShadow(-3px 0 10px red);
+    text-shadow:-3px 0 red;
+}
+
+.greenShadow {
+    filter: dropShadow(-3px 0 10px green);
+    text-shadow:-3px 0 red;
+}
+
+.glitch {
+    position: absolute
+}
+
+.logo {
+    position: relative;
+    width: 482px;
+    height: 100px;
+    text-align: center;
+    z-index: 2;
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}

@@ -1,0 +1,44 @@
+.animation, .animation_layer {
+  height: 1000px;
+}
+
+.animation {
+  display: block;
+  position: relative;
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.animation_layer.parallax {
+  position: fixed;
+}
+
+.bg {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 120vw;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$bgImages: (
+        bg_l_1:'layer_1.png',
+        bg_l_2:'layer_2.png',
+        bg_l_3:'layer_3.png',
+        bg_l_4:'layer_4.png',
+        bg_l_5:'layer_5.png',
+);
+
+@each $name, $value in $bgImages {
+  .#{$name} {
+    background-image: url('../../common/images/bg_layers/' + $value);
+  }
+}

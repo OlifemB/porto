@@ -1,0 +1,44 @@
+$fontFaces: (
+        radwaveFont: 'RadwaveFont.otf',
+        outrunFuture: 'OutrunFuture.otf',
+        cyberspaceRacewayFront: 'CyberspaceRacewayBack.otf',
+        WaitingfortheSunrise: 'WaitingfortheSunrise-Regular.ttf',
+        Glowdex:'Glowdex-GOV3g.otf',
+        cinzelRegular:'cinzel/Cinzel-Regular.ttf',
+        cinzelBold:'cinzel/Cinzel-Bold.ttf,',
+        cinzelBlack:'cinzel/Cinzel-Black.ttf',
+        hikouOutline: 'hikou/Hikou Outline.otf',
+        hikouCorroded: 'hikou/Hikou Corroded.otf',
+        hikouDiagonal: 'hikou/Hikou Diagonal.otf',
+        hikouDistorted: 'hikou/Hikou Distorted.otf',
+        hikouLight: 'hikou/Hikou Light.otf',
+        hikouLightOblique: 'hikou/Hikou Light Oblique.otf',
+        hikouOblique: 'hikou/Hikou Oblique.otf',
+        hikouRegular: 'hikou/Hikou Regular.otf',
+        hikouRough: 'hikou/Hikou Rough.otf',
+        hikouUrban: 'hikou/Hikou Urban.otf',
+);
+
+@each $name, $path in $fontFaces {
+  @font-face {
+    font-family: $name;
+    src: url('../fonts/' + $path);
+  }
+
+  .#{$name} {
+    font-family: $name
+  }
+}
+
+
+.text-shadow {
+  text-shadow: -2px 2px 1px #000, -4px 4px 1px #000, -6px 6px 1px #000;
+}
+
+.text-shadow-sm {
+  text-shadow: -2px 2px 1px #000, -4px 4px 1px #000;
+}
+
+.text-shadow-lg {
+  text-shadow: -2px 2px 1px #000, -4px 4px 1px #000, -6px 6px 1px #000, -8px 8px 1px #000;
+}

@@ -8,6 +8,7 @@ export const Main = () => {
         <Layout>
             <Hero />
             <Layers />
+            <div className={'h-[300vh]'}>asd</div>
         </Layout>
     )
 }

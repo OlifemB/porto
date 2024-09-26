@@ -22,11 +22,12 @@
   position: absolute;
   background-size: cover;
   background-position: center center;
-  width: 120vw;
-  height: 120vh;
+  width: 10vw;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(2);
 }
 
 $bgImages: (

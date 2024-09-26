@@ -16,6 +16,7 @@ export const Hero = () => {
             const targets = document.querySelectorAll('.bg')
             const x = mousePosition.x / windowSize.width - 0.5
             const y = mousePosition.y / windowSize.height - 0.5
+
             targets.forEach(el => {
                 const q = el.getAttribute('data-q')
                 gsap.to(el, {
@@ -33,7 +34,7 @@ export const Hero = () => {
             <div
                 ref={container}
                 className={
-                    'fixed top-0 flex items-center justify-center w-screen h-screen overflo w-hidden scale-[1.1]'
+                    'fixed top-0 flex items-center justify-center w-screen h-screen overflow-hidden scale-[1.1]'
                 }
             >
                 {data.map((item, index) => (

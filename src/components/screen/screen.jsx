@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { useWindowSize } from '../../common/hooks/useWinowSize.js'
+import { useMousePosition } from '../../common/hooks/useMousePosition.js'
 
 const styleSection =
     'h-screen w-screen flex flex-col items-center justify-center text-white'
@@ -17,7 +19,7 @@ export const Screen = ({ children, sectionIndex }) => {
             y: '100%',
             opacity: 0,
             ease: 'back.out',
-            delay: index / q,
+            delay: 5 + index / q,
         })
     }, [])
 
@@ -27,7 +29,7 @@ export const Screen = ({ children, sectionIndex }) => {
                 y: '0%',
                 opacity: 1,
                 ease: 'back.out',
-                delay: index / q,
+                delay: 5 + index / q,
             })
         })
     }, [])
@@ -35,7 +37,7 @@ export const Screen = ({ children, sectionIndex }) => {
     return (
         <div key={`section${sectionIndex}`} className={styleSection}>
             <div className={styleContainer}>
-                <div className={styleBlock}>
+                <div className={styleBlock} data-q={2}>
                     {children.content.map((content, contentIndex) => (
                         <div
                             className={`${content.className} content`}

@@ -31,7 +31,9 @@ export const Layout = ({ children }) => {
     return (
         <>
             <Navbar />
-            <main className={'relative overflow-x-hidden'}>{children}</main>
+            <main className={'relative overflow-x-hidden overflow-y-scroll'}>
+                {children}
+            </main>
             <Footer />
         </>
     )
